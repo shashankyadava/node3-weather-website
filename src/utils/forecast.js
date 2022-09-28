@@ -16,7 +16,7 @@ const forecast = (longitude,latitude,callback)=>{
             //     Temperature: body.current.temperature,
             //     Feelslike: body.current.feelslike
             // })
-            callback(undefined, 'Weather is '+body.current.weather_descriptions[0]+'.' + ' It is currently ' + body.current.temperature + ' degress out. It feels like ' + body.current.feelslike+' degree.')
+            callback(undefined, 'Weather is '+body.current.weather_descriptions[0]+'.' + ' It is currently ' + body.current.temperature + ' degress out. It feels like ' + body.current.feelslike+' degree. Humidity is '+body.current.humidity+'.')
         }
     })
 }
